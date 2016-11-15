@@ -1,0 +1,16 @@
+<table border='1' width='100%'>
+<tr>
+<th><input type="checkbox" ng-model="selectedAll" ng-click="checkAll()"/></th>
+<th ng-click="sortByHeader()">Name</th>
+<th ng-click="sortByHeader()">Country</th>
+</tr>
+<tr ng-repeat='x in customerInfo| orderBy:myOrderBy'>
+<td><input  align="center" type="checkbox" ng-model="selectedAll" ng-click="checkAll()"/></td>
+<td >{{x.name}}</td>
+<td>{{x.category}}</td>
+<td>{{x.category}}</td>
+<td>{{x.category}}</td>
+<td>{{x.category}}</td>
+</tr>
+</table>
+<div> <input type="text" ng-model="value"> <button ng-click="add({name:value})">add</button></div>
